@@ -1,1 +1,76 @@
-Hello github.io
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--link(rel='icon', href='/images/favicon.ico'-->
+    <title>Pondering on open data</title>
+    <link rel="stylesheet" href="/css/app.css">
+    <script src="/js/vendor.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/app.templates.js"></script>
+    <link type="text/plain" rel="author" href="humans.txt">
+  </head>
+  <body>
+    <div class="blog-masthead">    
+      <div class="container">
+        <div class="blog-header">
+          <h1 class="blog-title">Pondering on maps, charts and open data</h1>        
+          <p class="lead blog-description">Visual exploration of the government data in the Philippines.</p>
+        </div>      
+        <div class="row">
+          <div class="col-sm-12 blog-main">
+            <div class="blog-post">
+              <h2 class="blog-post-title">Poverty Incidence</h2>            
+              <p class="blog-post-meta">December 23, 2013 by <a href="#">Randy</a></p>            
+              <p>Poverty incidence is the the proportion of families/individuals with per capita income/expenditure less than the per capita poverty threshold to the total number of families/individuals. </p>
+              <p>From PSA's 2012 survey, Metro Manila has a poverty incidence of only 2.6 percent, or  only 76,530 families.   The “less poor” regions (those with less than 20 percent poverty) are in Ilocos, CAR, Cagayan Valley, Central Luzon and Calabarzon. The rest of the regions and their component provinces have poverty incidence of over 25 percent. </p>            
+              <blockquote> 
+                <p>The decline in poverty has been slow and uneven, much slower than neighboring countries who experienced broadly similar numbers in the 1980s,[4] such as People's Republic of China (PRC), Thailand, Indonesia (where the poverty level lies at 8.5%) or Vietnam (13.5%). This shows that the incidence of poverty has remained significantly high as compared to other countries for almost a decade. The unevenness of the decline has been attributed to a large range of income brackets across regions and sectors, and unmanaged population growth. The Philippines poverty rate is roughly the same level as Haiti.</p>
+              </blockquote>            
+              <div id="map" style="width:100%" class="map"></div>
+              <script type="text/javascript">mapInit()              </script>
+              <p><small>
+                  <p>
+                    <Data>sources:</Data>
+                  </p>
+                  <p><a href="http://www.nscb.gov.ph/poverty/data/fullterm2012/tab1.xls">PSA 2012 Full Year Official Poverty Statistics </a></p>
+                  <p><a href="http://www.nscb.gov.ph/poverty/2012_SAE/2012%20SAE_final.xlsx">PSA 2012 Municipal and City Level Poverty Estimates        </a></p></small></p>
+            </div>
+            <!-- /.blog-post-->
+            <div class="blog-post">
+              <h2 class="blog-post-title">Poverty threshold</h2>            
+              <p class="blog-post-meta">December 14, 2013 by <a href="#">Randy</a></p>            
+              <p>The poverty threshold is the minimum level of income needed to meet the basic food needs and non-food requirements. In 2012, according to the Philippine Statistics Authority, a family of five needs at least P5,450 on the average every month to meet the family’s basic food needs, and at least P8,022 every month to meet the food and non-food thresholds. </p>         
+              <blockquote>
+                <p>Per PSA's definition</p>
+                <p>
+                  Basic food requirements are currently based on 100% adequacy for the Recommended Energy and Nutrient Intake (RENI) for protein and energy equivalent to an average of 2000 kilocalories per capita, and 80% adequacy for other nutrients. 
+                  |
+                </p>
+                <p>On the other hand, basic non-food requirements, indirectly estimated by obtaining the ratio of food to total basic expenditures from a reference group of families, cover expenditure on: 1) clothing and footwear; 2) housing; 3) fuel, light, water; 4) maintenance and minor repairs; 5) rental of occupied dwelling units; 6) medical care; 7) education; 8) transportation and communication; 9) non-durable furnishings; 10) household operations; and 11) personal care & effects.</p>
+              </blockquote>            
+              <div id="map2" style="width:100%" class="map"></div>
+              <script type="text/javascript">absPoverty()            </script>
+              <p><small>
+                  <p>
+                    <Data>source:</Data>
+                  </p>
+                  <p><a href="http://www.nscb.gov.ph/poverty/data/fullterm2012/tab1.xls">PSA 2012 Full Year Official Poverty Statistics </a></p></small></p>
+            </div>
+            <!-- /.blog-post-->
+            <nav>
+              <ul class="pager">
+                <li><a href="#">Previous</a></li>              
+                <li><a href="#">Next </a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
